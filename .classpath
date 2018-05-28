@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry excluding="temp/StoryPanel0.java|temp/StoryPanel10.java|temp/StoryPanel12.java|temp/StoryPanel13.java|temp/StoryPanel14.java|temp/StoryPanel15.java|temp/StoryPanel16.java|temp/StoryPanel18.java|temp/StoryPanel19.java|temp/StoryPanel2.java|temp/StoryPanel20.java|temp/StoryPanel21.java|temp/StoryPanel23.java|temp/StoryPanel25.java|temp/StoryPanel26.java|temp/StoryPanel3.java|temp/StoryPanel4.java|temp/StoryPanel5.java|temp/StoryPanel6.java|temp/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
