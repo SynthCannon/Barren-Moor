@@ -12,7 +12,7 @@ public class StoryPanel22 implements AbstractStoryPanel {
 	}
 
 	public void entry() {
-		if (!player.hasGhilliOn())
+		if (!player.hasGhillieOn())
 			System.out.println("The dragon takes a while to notice you, he takes a while to start chasing you, what do you do?");	
 		else 
 			System.out.println("The dragon does not notice you.");
@@ -23,7 +23,7 @@ public class StoryPanel22 implements AbstractStoryPanel {
 		return 22;
 	}
 	public int south() {
-		if (!player.hasGhilliOn() && dragon.getCurrentPanel() == 22) {
+		if (!player.hasGhillieOn() && dragon.getCurrentPanel() == 22) {
 			System.out.println("You head south and the dragon follows you.");
 			dragon.setChasing(true);
 		} else
@@ -35,7 +35,7 @@ public class StoryPanel22 implements AbstractStoryPanel {
 		return 22;
 	}
 	public int west() {
-		if (player.hasGhilliOn()) {
+		if (player.hasGhillieOn()) {
 			System.out.println("You avoid detection by the dragon");
 			return 21;
 		}

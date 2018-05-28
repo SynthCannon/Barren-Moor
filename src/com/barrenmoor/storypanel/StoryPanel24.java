@@ -11,9 +11,9 @@ public class StoryPanel24 implements AbstractStoryPanel {
 	public void entry() {
 		System.out.println("You find John training his trainees military style.\r" +
 							"John: COME NOW TRAINEE, WE GOT LOTS OF WORK TO DO!");
-		if(player.hasGhilli() == false) {
-							System.out.println("He gives you a ghilli suit, briefs you and you begin training.");
-							player.setGhilli(true);
+		if(player.hasGhillie() == false) {
+							System.out.println("He gives you a Ghillie suit, briefs you and you begin training.");
+							player.setGhillie(true);
 		}
 	}
 	

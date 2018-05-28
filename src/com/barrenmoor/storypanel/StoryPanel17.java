@@ -21,8 +21,8 @@ public class StoryPanel17 implements AbstractStoryPanel {
 	
 	public int north() {
 		if (dragon.getCurrentPanel() == 22) {
-			if (player.hasGhilliOn()) {
-				System.out.println("You safely approach an injured dragon with your ghilli suit on.");
+			if (player.hasGhillieOn()) {
+				System.out.println("You safely approach an injured dragon with your Ghillie suit on.");
 				return 22;	
 			} else {
 				System.out.println("Injured dragon encounter, well done on the discovery, too bad it ate you.");

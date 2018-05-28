@@ -5,7 +5,7 @@ package com.barrenmoor.main;
  * Created with the idea of easy expansion in mind
  * (Can easily add extra functionality and change functionality)
  * 
- * The winning path is WWNNEESENNENSWWWNES (put ghilli on) and finally N 
+ * The winning path is WWNNEESENNENSWWWNES (put ghillie on) and finally N 
  * 
  * 
  */

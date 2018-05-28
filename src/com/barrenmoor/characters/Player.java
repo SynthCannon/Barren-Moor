@@ -9,8 +9,8 @@ public class Player extends Character{
 	 * Player does not have option to hold more than one of each item
 	 * item 1: flint
 	 * item 2: Dev
-	 * item 3: ghilli suit
-	 * item 4: ghilli suit on/off
+	 * item 3: Ghillie suit
+	 * item 4: Ghillie suit on/off
 	 * get and set methods for each item/equipment
 	 * 
 	 */
@@ -39,16 +39,16 @@ public class Player extends Character{
 	public boolean getDev () {
 		return inventory[1];
 	}
-	public void setGhilli (boolean arg) {
+	public void setGhillie (boolean arg) {
 		inventory[2]= arg;
 	}
-	public boolean hasGhilli () {
+	public boolean hasGhillie () {
 		return inventory[2];
 	}
-	public void setGhilliOn (boolean arg) {
+	public void setGhillieOn (boolean arg) {
 		inventory[3]= arg;
 	}
-	public boolean hasGhilliOn () {
+	public boolean hasGhillieOn () {
 		return inventory[3];
 	}
 	

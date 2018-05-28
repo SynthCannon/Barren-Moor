@@ -26,9 +26,9 @@ public class StoryPanel21 implements AbstractStoryPanel {
 	}
 	public int east() {
 		if(dragon.getCurrentPanel() == 22) {
-			System.out.println("You approach the dragon from his blind spot.");
-			if (player.hasGhilliOn())
-				System.out.println("Though this doesn't matter because you has your ghilli suit on.");
+			System.out.println("You approach the dragon from his blind side.");
+			if (player.hasGhillieOn())
+				System.out.println("Though this doesn't matter because you has your Ghillie suit on.");
 		} else
 			System.out.println("You approach the spot where you found the dragon.");
 		return 22;

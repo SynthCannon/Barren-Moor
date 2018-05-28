@@ -28,8 +28,8 @@ public class Input {
 			System.out.println("The dragon has left it's spot");
 
 		System.out.print("Which direction do you wish to proceed? (n/e/s/w)");
-		if (player.hasGhilli())
-			System.out.print(" or Ghilli toggle with g");
+		if (player.hasGhillie())
+			System.out.print(" or Ghillie toggle with g");
 		
 		System.out.println();
 		String input = new String();
@@ -39,17 +39,17 @@ public class Input {
 
 		if (input.equals("n") || input.equals("e") || input.equals("s") || input.equals("w"))
 			handleDirectionInput(input.toCharArray()[0]);
-		else if (input.equals("g") && player.hasGhilli()) {
-			player.setGhilliOn(!player.hasGhilliOn());
-			if(player.hasGhilliOn())
-				System.out.println("You put on your Ghilli suit");
+		else if (input.equals("g") && player.hasGhillie()) {
+			player.setGhillieOn(!player.hasGhillieOn());
+			if(player.hasGhillieOn())
+				System.out.println("You put on your Ghillie suit");
 			else
-				System.out.println("You take off your Ghilli suit");
+				System.out.println("You take off your Ghillie suit");
 
-			if (dragon.isChasing() && player.hasGhilliOn()) {
+			if (dragon.isChasing() && player.hasGhillieOn()) {
 				System.out.println("The dragon loses sight of you");
 				dragon.setChasing(false);
-			} else if (dragon.getCurrentPanel() == player.getCurrentPanel() && !player.hasGhilliOn()) {
+			} else if (dragon.getCurrentPanel() == player.getCurrentPanel() && !player.hasGhillieOn()) {
 				System.out.println("You reveal yourself to the dragon and it starts chasing you");
 				dragon.setChasing(true);
 			}
@@ -67,7 +67,7 @@ public class Input {
 		
 		player.setCurrentPanel(grid.moveCurrentPanel(direction, player.getCurrentPanel()));
 		
-		if (lastLocation == dragon.getCurrentPanel() && !player.hasGhilliOn() && player.getCurrentPanel() != -1) {
+		if (lastLocation == dragon.getCurrentPanel() && !player.hasGhillieOn() && player.getCurrentPanel() != -1) {
 			if (!dragon.isChasing()) {
 				System.out.println("The dragon starts chasing you");
 				dragon.setChasing(true);
